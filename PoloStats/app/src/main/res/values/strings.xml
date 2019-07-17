@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Polo Stats</string>
+    <string name="action_settings">Settings</string>
+    <string name="game_archive">Game Archive</string>
+    <string name="new_game">New Game</string>
+    <string name="roster">Roster</string>
+    <string name="polo_stats">Polo Stats</string>
+</resources>

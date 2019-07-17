@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".EditPlayerActivity">
+
+    <TextView
+        android:id="@+id/epName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/epSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:id="@+id/menu_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnWidth="1000dp"
+            android:columnCount="6"
+            android:gravity="center"
+            android:horizontalSpacing="100dp"
+            android:numColumns="auto_fit"
+            android:rowCount="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="100dp">
+
+            <TextView
+                android:id="@+id/epGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Goals"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberGoals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epGoalsP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epGoalsM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/epShotAttempts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Shot Attempts"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberShotAttempts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epShotAttemptsP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epShotAttemptsM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/epAssists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Assists"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberAssists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epAssistP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epAssistM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/epDrawnEj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="DEX"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberDrawnEj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epDrawnEjectP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epDrawnEjectM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/epEjections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="EX"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberEjections"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column ="5"
+                android:layout_weight="1"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epEjectionsP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epEjectionsM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/epSteals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Steals"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberSteals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epStealsP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epStealsM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/epBlocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:text="Blocks"
+                android:paddingRight="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/epnumberBlocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:text="0"
+                android:paddingLeft="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/epBlocksP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/epBLocksM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="6"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.capstone.mattf.polostats.MainActivity">
+    <item
+        android:id="@+id/homemenu"
+        android:orderInCategory="100"
+        android:title="Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/gamearchivemenu"
+        android:orderInCategory="102"
+        android:title="Game Archive" />
+    <item
+        android:id="@+id/rostermenu"
+        android:orderInCategory="103"
+        android:title="Roster" />
+</menu>
